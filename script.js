@@ -8,8 +8,9 @@ let ratio33333=document.getElementById('radio33333')
 let result=document.getElementById('result');
 
 button.addEventListener('click',callForMarks);
-function callForMarks()
+function callForMarks(e)
 {
+    e.preventDefault();
     let total=0;
     if(radio1.checked)
     {
